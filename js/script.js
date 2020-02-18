@@ -10,7 +10,7 @@ function sendMessage() {
   var message = document.getElementById('message').value;
   const statusCodes = [200, 201, 500];
   var randomStatusCode = statusCodes[Math.floor(Math.random() * statusCodes.length)];
-  var url = `http://httpbin.org/status/${randomStatusCode}`;
+  var url = `https://httpbin.org/status/${randomStatusCode}`;
   var payload = {
     message: message
   }
